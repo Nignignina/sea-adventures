@@ -1,9 +1,20 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.scss";
-import Card from "@/components/DefaultComponents";
+import Card from "@/components/Card";
+import { dataList } from "@/data";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const add = 8;
+  const initialCard = dataList.slice(0, 8);
+
+  const [totalCard, setTotalCard] = useState(add);
+
+  const onAddCard = () => {
+    setTotalCard((prev) => prev + add);
+  };
+  const cardToRender = dataList.slice(0, totalCard);
   return (
     <>
       <Head>
@@ -20,7 +31,15 @@ export default function Home() {
           <div className={styles.overlay}> </div>
         </header>
         {/* ------SECTIONS START------ */}
-        <Card />
+        <div className={`${styles.section} `}>
+          {cardToRender.map((item) => (
+            <Card key={item.id} data={item} />
+          ))}{" "}
+        </div>
+        {/* step2 */}
+        <div className={styles.input}>
+          <input type="button" value="MOSTRA ALTRI" onClick={onAddCard} />{" "}
+        </div>
 
         {/* ------HEADER------- */}
         {/* <header className={styles.page_header}>

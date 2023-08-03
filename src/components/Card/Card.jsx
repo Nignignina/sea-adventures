@@ -1,47 +1,47 @@
 import styles from "./Card.module.scss";
 
-const Card = () => {
+const Card = ({ data }) => {
   // VARIABLES ----------------
 
-  const data = {
-    id: "61a52052759e7f71d786",
-    code: "8142-90724",
-    title: "Isole Egadi",
-    departure: {
-      portCode: "FVG",
-      countryCode: "IT",
-      Port: "Favignana",
-    },
-    arrival: {
-      portCode: "FVG",
-      countryCode: "IT",
-      Port: "Favignana",
-    },
-    budget: {
-      currencyCode: "€",
-      value: 480,
-      costType: "per cabina",
-    },
-    itinerary: [
-      {
-        portCode: "LVN",
-        countryCode: "IT",
-        Port: "Levanzo",
-      },
-      {
-        portCode: "MRT",
-        countryCode: "IT",
-        Port: "Marettimo",
-      },
-    ],
-    numberOfDays: 3,
-    reservationsAvailable: 2,
-    reservations: 4,
-    reservationsType: "cabine",
-    boatType: "Barca a vela",
-    departureDate: "2023-08-07 7:50:00",
-    arrivalDate: "2023-08-09 15:00:00",
-  };
+  // const data = {
+  //   id: "61a52052759e7f71d786",
+  //   code: "8142-90724",
+  //   title: "Isole Egadi",
+  //   departure: {
+  //     portCode: "FVG",
+  //     countryCode: "IT",
+  //     Port: "Favignana",
+  //   },
+  //   arrival: {
+  //     portCode: "FVG",
+  //     countryCode: "IT",
+  //     Port: "Favignana",
+  //   },
+  //   budget: {
+  //     currencyCode: "€",
+  //     value: 480,
+  //     costType: "per cabina",
+  //   },
+  //   itinerary: [
+  //     {
+  //       portCode: "LVN",
+  //       countryCode: "IT",
+  //       Port: "Levanzo",
+  //     },
+  //     {
+  //       portCode: "MRT",
+  //       countryCode: "IT",
+  //       Port: "Marettimo",
+  //     },
+  //   ],
+  //   numberOfDays: 3,
+  //   reservationsAvailable: 2,
+  //   reservations: 4,
+  //   reservationsType: "cabine",
+  //   boatType: "Barca a vela",
+  //   departureDate: "2023-08-07 7:50:00",
+  //   arrivalDate: "2023-08-09 15:00:00",
+  // };
 
   // CONDITIONS ---------------
 
