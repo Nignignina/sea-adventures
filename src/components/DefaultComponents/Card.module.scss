@@ -1,0 +1,88 @@
+// 18 +24
+.Card {
+  width: 300px;
+  height: 300px;
+  background-color: $color-gray;
+  border-radius: 10px;
+  padding: 7px 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  span {
+    color: $color-details;
+    font-weight: $font-regular;
+  }
+  // mainINFO
+  &_mainInfo {
+    color: $color-secondary;
+    font-size: $heading5;
+
+    span {
+      font-weight: $font-medium;
+      font-size: $heading4;
+      color: $color-secondary;
+    }
+
+    .title {
+      font-size: $heading3;
+      font-weight: $font-medium;
+    }
+  }
+
+  //   DEPARTURE
+  .departure {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      font-size: $paragraph;
+      font-weight: $font-medium;
+      p:nth-child(1) {
+        color: aqua;
+        font-size: $heading5;
+        font-weight: $font-regular;
+      }
+    }
+    .right {
+      font-size: $heading5;
+      font-weight: $font-medium;
+    }
+  }
+
+  //   TIMING
+  &_timing {
+    font-size: $heading5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p:nth-child(2) {
+      color: $color-details;
+    }
+  }
+
+  .accomodation {
+    font-size: $heading5;
+    font-weight: $font-medium;
+  }
+
+  .input {
+    width: 100%;
+
+    input {
+      width: 100%;
+      background-color: $color-secondary;
+      color: rgb(251, 251, 251);
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: $heading5;
+      font-weight: $font-medium;
+      cursor: pointer;
+    }
+  }
+}
+
+// .Card:hover {
+//   bo
+// }
