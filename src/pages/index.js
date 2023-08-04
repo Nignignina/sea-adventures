@@ -43,9 +43,9 @@ export default function Home() {
   // random
   // secttion
 
-  const filteredDestinations = selectedLocation
-    ? dataList?.filter((item) => item?.departure.Port === selectedLocation)
-    : dataList;
+  // const filteredDestinations = selectedLocation
+  //   ? dataList?.filter((item) => item?.departure.Port === selectedLocation)
+  //   : dataList;
 
   console.log(dataList.length);
   // by departure port
@@ -108,7 +108,10 @@ export default function Home() {
             <option value="byLocation">Mostra per luogo di partenza</option>
           </select>
 
-          <select className={styles.select} value={selectedLocation}>
+          <select
+            onChange={handlePortSelect}
+            className={styles.select}
+            value={selectedPort}>
             <option value="all">Partenza</option>
             {departurePorts.map((departure, index) => (
               <option key={index} value={departure}>
