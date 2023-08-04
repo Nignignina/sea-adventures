@@ -57,6 +57,24 @@
 //   gap: 20px;
 //   background-color: aqua;
 // }
+
+//
+.option {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  gap: 80px;
+
+  .select {
+    margin-top: 80px;
+    padding: 10px;
+    font-size: 16px;
+    border-color: $color-primary;
+  }
+}
+
 .section {
   width: 100%;
   padding-top: 60px;
@@ -85,12 +103,6 @@
   }
 }
 
-.select {
-  margin-top: 80px;
-  padding: 10px;
-  font-size: 16px;
-  border-color: $color-primary;
-}
 // BANNER2
 .banner2 {
   position: relative;

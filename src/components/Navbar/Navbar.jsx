@@ -1,10 +1,6 @@
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
-  // VARIABLES ----------------
-  // CONDITIONS ---------------
-  // FUNCTIONS ----------------
-  // RETURN -------------------
   return (
     <div className={styles.Navbar}>
       <div className={styles.logo}>
