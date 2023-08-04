@@ -1,0 +1,30 @@
+.Sections {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+
+  padding: 10px 40px;
+
+  &_title {
+    padding: 20px;
+    background-color: $color-secondary;
+    color: whitesmoke;
+    width: 100%;
+  }
+  h2 {
+    padding: 20px 10px;
+    font-size: $heading3;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}

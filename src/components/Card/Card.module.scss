@@ -9,7 +9,40 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
 
+  .arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    background-image: url("/assets/icons/right-arrow-alt.svg");
+
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    svg {
+      width: 44px; /* Dimensioni dell'SVG */
+      height: 44px;
+      fill: $color-secondary;
+    }
+  }
+
+  .right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
   span {
     color: $color-details;
     font-weight: $font-regular;
