@@ -1,6 +1,6 @@
 import styles from "./Sections.module.scss";
 
-import Card from "@/components/Card";
+import Card from "@/components/card";
 
 const Sections = ({ location, places, showTitle }) => {
   return (

@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.scss";
-
+import Card from "@/components/card";
 import Sections from "@/components/sections";
-import Card from "@/components/Card";
+
 import { dataList } from "@/data";
 import { useState, useEffect } from "react";
 
